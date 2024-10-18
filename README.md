@@ -1,5 +1,6 @@
 # Combine
-Publisher
+
+Publisher:
 
 A type that can push out data. It can push out the data all at once or over time. 
 In English, “publish” means to “produce and send out to make known”.
@@ -7,11 +8,14 @@ In English, “publish” means to “produce and send out to make known”.
 protocol Publisher {
  func receive(subscriber:)
 }
+func PublishData<Output, Failure>(...)
 
-Subscriber
+Subscriber:
 
 Something that can receive data from a publisher. In English, “subscribe” means to “arrange to receive something”.
 "I would like to sign up for some data."
+
+func SubscriberToData<Input, Failure>(...)
 
 protocol Subscriber {
  func receive(subscription:)
@@ -24,6 +28,7 @@ Operators are functions you can put right on the pipeline between the Publisher 
 They take in data, do something, and then re-publish the new data. So operators ARE publishers.
 They modify the Publisher much like you’d use modifiers on a SwiftUI view.
 
+func FilterData<Output, Failure>(...)
 
 Upstream
 “Upstream” means “in the direction of the PREVIOUS part”.
