@@ -1,1 +1,37 @@
 # Combine
+Publisher
+
+A type that can push out data. It can push out the data all at once or over time. 
+In English, “publish” means to “produce and send out to make known”.
+
+protocol Publisher {
+ func receive(subscriber:)
+}
+
+Subscriber
+
+Something that can receive data from a publisher. In English, “subscribe” means to “arrange to receive something”.
+"I would like to sign up for some data."
+
+protocol Subscriber {
+ func receive(subscription:)
+ func receive(input:)
+ func receive(completion:)
+}
+
+Operators
+Operators are functions you can put right on the pipeline between the Publisher and the Subscriber.
+They take in data, do something, and then re-publish the new data. So operators ARE publishers.
+They modify the Publisher much like you’d use modifiers on a SwiftUI view.
+
+
+Upstream
+“Upstream” means “in the direction of the PREVIOUS part”.
+In Combine, the previous part is usually a Publisher or Operator
+
+Downstream
+“Downstream” means “in the direction of the NEXT part”.
+In Combine, the next part could be another Publisher, Operator or even the Subscriber at the end.
+
+
+General: Publisher and Subscriber should have same data type. You WILL NOT have to conform to these protocols yourself. The Combine team did all of this for you!
