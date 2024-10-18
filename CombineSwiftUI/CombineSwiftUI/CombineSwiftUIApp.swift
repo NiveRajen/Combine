@@ -13,7 +13,9 @@ struct CombineSwiftUIApp: App {
         WindowGroup {
             //SimpleMVVM()
             
-            ProtocolCombine(developer: DeveloperStruct(firstName: "Nivedha", lastName: "Rajendran"), student: StudentClass(first: "Jack", last: "Sparrow"))
+            //ProtocolCombine(developer: DeveloperStruct(firstName: "Nivedha", lastName: "Rajendran"), student: StudentClass(first: "Jack", last: "Sparrow"))
+            
+            GenericsCombine()
         }
     }
 }

@@ -6,9 +6,16 @@ A type that can push out data. It can push out the data all at once or over time
 In English, “publish” means to “produce and send out to make known”.
 
 protocol Publisher {
- func receive(subscriber:)
+    func receive(subscriber:)
 }
 func PublishData<Output, Failure>(...)
+
+protocol Publisher {
+    associatedtype Output
+    associatedtype Failure: Error
+    
+    func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input
+}
 
 Subscriber:
 
@@ -18,12 +25,17 @@ Something that can receive data from a publisher. In English, “subscribe” me
 func SubscriberToData<Input, Failure>(...)
 
 protocol Subscriber {
- func receive(subscription:)
- func receive(input:)
- func receive(completion:)
+    func receive(subscription:)
+    func receive(input:)
+    func receive(completion:)
 }
 
-Operators
+protocol Subscriber {
+    associatedtype Input
+    associatedtype Failure: Error
+}
+
+Operators:
 Operators are functions you can put right on the pipeline between the Publisher and the Subscriber.
 They take in data, do something, and then re-publish the new data. So operators ARE publishers.
 They modify the Publisher much like you’d use modifiers on a SwiftUI view.
