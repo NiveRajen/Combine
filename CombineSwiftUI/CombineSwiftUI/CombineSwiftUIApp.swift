@@ -19,7 +19,9 @@ struct CombineSwiftUIApp: App {
             
 //            AssociatedTypeTypeAlias()
             
-            PublishedView()
+//            PublishedView()
+            
+            CurrentValueSubjectView()
         }
     }
 }

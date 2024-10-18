@@ -52,3 +52,14 @@ In Combine, the next part could be another Publisher, Operator or even the Subsc
 
 
 General: Publisher and Subscriber should have same data type. You WILL NOT have to conform to these protocols yourself. The Combine team did all of this for you!
+
+
+@Published
+1. The pipeline is run
+2. The value is set
+3. The UI is automatically notified of changes
+
+CurrentValueSubject
+1. The value is set
+2. The pipeline is run
+3. The UI is notified of changes (using objectWillChange.send())
