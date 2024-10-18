@@ -15,7 +15,11 @@ struct CombineSwiftUIApp: App {
             
             //ProtocolCombine(developer: DeveloperStruct(firstName: "Nivedha", lastName: "Rajendran"), student: StudentClass(first: "Jack", last: "Sparrow"))
             
-            GenericsCombine()
+//            GenericsCombine()
+            
+//            AssociatedTypeTypeAlias()
+            
+            PublishedView()
         }
     }
 }
