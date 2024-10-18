@@ -23,7 +23,9 @@ struct CombineSwiftUIApp: App {
             
 //            CurrentValueSubjectView()
             
-            ErrorHandlingView()
+//            ErrorHandlingView()
+            
+            FutureView()
         }
     }
 }
