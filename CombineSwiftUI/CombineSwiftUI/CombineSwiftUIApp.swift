@@ -21,7 +21,9 @@ struct CombineSwiftUIApp: App {
             
 //            PublishedView()
             
-            CurrentValueSubjectView()
+//            CurrentValueSubjectView()
+            
+            ErrorHandlingView()
         }
     }
 }
