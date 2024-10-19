@@ -20,14 +20,20 @@ struct CombineSwiftUIApp: App {
 //            AssociatedTypeTypeAlias()
             
 //            PublishedView()
-            
+                        
 //            CurrentValueSubjectView()
+            
+//            PassthroughSubjectView()
             
 //            ErrorTypeView()
             
 //            FutureView()
             
-            SequenceView()
+//            SequenceView()
+            
+//            TimerView()
+            
+            UrlDataTaskPublisherView()
         }
     }
 }
