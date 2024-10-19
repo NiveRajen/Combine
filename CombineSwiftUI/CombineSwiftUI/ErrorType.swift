@@ -18,9 +18,9 @@ enum InvalidAgeError: Error {
     case lessThanZero
 }
 
-struct ErrorHandlingView: View {
+struct ErrorTypeView: View {
     
-    @StateObject private var vm = ErrorHandlingViewModel()
+    @StateObject private var vm = ErrorTypeViewModel()
     
     @State private var age = ""
     
@@ -53,13 +53,13 @@ struct ErrorHandlingView: View {
     }
 }
 
-struct ErrorHandlingView_Previews: PreviewProvider {
+struct ErrorTypeView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorHandlingView()
+        ErrorTypeView()
     }
 }
 
-class ErrorHandlingViewModel: ObservableObject {
+class ErrorTypeViewModel: ObservableObject {
     
     @Published var dataToView: [String] = []
     
@@ -115,6 +115,8 @@ class Validators {
         }
         
         //Normally, the Just publisher doesn’t throw errors. So we have to use setFailureType so we can match up the failure types of our Fail publishers above. This allows us to use eraseToAnyPublisher so all Fail and this Just publisher are all the same type that we return from this function.
+        
+        //Using the Just publisher can turn any variable into a publisher. It will take any value you have and send it through a pipeline that you attach to it one time and then finish (stop) the pipeline.
         return Just(age)
             .setFailureType(to: InvalidAgeError.self)
             .eraseToAnyPublisher()
