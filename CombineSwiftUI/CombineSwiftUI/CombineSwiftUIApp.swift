@@ -25,7 +25,9 @@ struct CombineSwiftUIApp: App {
             
 //            ErrorTypeView()
             
-            FutureView()
+//            FutureView()
+            
+            SequenceView()
         }
     }
 }
