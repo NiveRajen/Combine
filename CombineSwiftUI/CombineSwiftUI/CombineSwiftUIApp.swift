@@ -39,7 +39,9 @@ struct CombineSwiftUIApp: App {
             
 //            ContainsView()
             
-            CountView()
+//            CountView()
+            
+            MaxView()
         }
     }
 }

@@ -47,6 +47,7 @@ class CountViewModel: ObservableObject {
                       "Rhine"]
         data = dataIn
         dataIn.publisher
+        //The count operator simply publishes the count of items it receives. It’s important to note that the count will not be published until the upstream publisher has finished publishing all items.
             .count() //This is a very simplistic example of a very simple operator.
             .assign(to: &$count)
     }
