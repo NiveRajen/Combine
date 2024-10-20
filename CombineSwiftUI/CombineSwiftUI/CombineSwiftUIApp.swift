@@ -35,7 +35,11 @@ struct CombineSwiftUIApp: App {
             
 //            UrlDataTaskPublisherView()
             
-            AllSatisfyView()
+//            AllSatisfyView()
+            
+//            ContainsView()
+            
+            CountView()
         }
     }
 }

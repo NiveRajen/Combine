@@ -9,7 +9,7 @@ import Combine
 
 //The contains operator has just one purpose - to let you know if an item coming through your pipeline matches the criteria you specify. It will publish a true when a match is found and then finishes the pipeline, meaning it stops the flow of any remaining data.
 
-struct ContainView: View {
+struct ContainsView: View {
     
     @StateObject private var vm = ContainsViewModel()
     
@@ -37,7 +37,7 @@ struct ContainView: View {
 
 struct ContainsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContainView()
+        ContainsView()
     }
 }
 
