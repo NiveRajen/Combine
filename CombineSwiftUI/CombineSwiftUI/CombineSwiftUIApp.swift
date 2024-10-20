@@ -33,7 +33,9 @@ struct CombineSwiftUIApp: App {
             
 //            TimerView()
             
-            UrlDataTaskPublisherView()
+//            UrlDataTaskPublisherView()
+            
+            AllSatisfyView()
         }
     }
 }
