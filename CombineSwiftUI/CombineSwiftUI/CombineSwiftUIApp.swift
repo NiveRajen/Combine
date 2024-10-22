@@ -51,7 +51,9 @@ struct CombineSwiftUIApp: App {
             
 //            PrefixView()
             
-            PrependView()
+//            PrependView()
+            
+            DebounceView()
         }
     }
 }
