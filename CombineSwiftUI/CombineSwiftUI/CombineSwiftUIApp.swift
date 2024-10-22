@@ -61,7 +61,9 @@ struct CombineSwiftUIApp: App {
             
 //            ThrottleView()
             
-            TimeOutView()
+//            TimeOutView()
+            
+            CompactMapView()
         }
     }
 }
