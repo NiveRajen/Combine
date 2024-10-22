@@ -55,7 +55,9 @@ struct CombineSwiftUIApp: App {
             
 //            DebounceView()
             
-            DelayView()
+//            DelayView()
+            
+            MeasureIntervalView()
         }
     }
 }
