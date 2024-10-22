@@ -59,7 +59,9 @@ struct CombineSwiftUIApp: App {
             
 //            MeasureIntervalView()
             
-            ThrottleView()
+//            ThrottleView()
+            
+            TimeOutView()
         }
     }
 }
