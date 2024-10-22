@@ -57,7 +57,9 @@ struct CombineSwiftUIApp: App {
             
 //            DelayView()
             
-            MeasureIntervalView()
+//            MeasureIntervalView()
+            
+            ThrottleView()
         }
     }
 }
