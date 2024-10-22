@@ -53,7 +53,9 @@ struct CombineSwiftUIApp: App {
             
 //            PrependView()
             
-            DebounceView()
+//            DebounceView()
+            
+            DelayView()
         }
     }
 }
