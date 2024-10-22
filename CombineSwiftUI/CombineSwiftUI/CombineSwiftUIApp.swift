@@ -45,7 +45,11 @@ struct CombineSwiftUIApp: App {
             
 //            MinView()
             
-            AppendView()
+//            AppendView()
+//            
+//            DropView()
+            
+            PrefixView()
         }
     }
 }
