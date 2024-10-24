@@ -71,7 +71,9 @@ struct CombineSwiftUIApp: App {
             
 //            MapView()
             
-            ReplaceNilView()
+//            ReplaceNilView()
+            
+            SetFailureTypeView()
         }
     }
 }
