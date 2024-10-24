@@ -79,7 +79,9 @@ struct CombineSwiftUIApp: App {
             
 //            CollectView()
             
-            Collect_ByCountView()
+//            Collect_ByCountView()
+            
+            Collect_ByTimeView()
         }
     }
 }
