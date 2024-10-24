@@ -75,7 +75,9 @@ struct CombineSwiftUIApp: App {
             
 //            SetFailureTypeView()
             
-            ScanView()
+//            ScanView()
+            
+            CollectView()
         }
     }
 }

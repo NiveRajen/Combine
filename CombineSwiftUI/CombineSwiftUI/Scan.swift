@@ -31,7 +31,7 @@ struct ScanView: View {
         }
         .font(.title)
         .onAppear {
-            vm.fetch()
+//            vm.fetch()
             vm.tryScanFetch()
         }
     }
