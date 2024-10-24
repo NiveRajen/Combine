@@ -77,7 +77,9 @@ struct CombineSwiftUIApp: App {
             
 //            ScanView()
             
-            CollectView()
+//            CollectView()
+            
+            Collect_ByCountView()
         }
     }
 }
