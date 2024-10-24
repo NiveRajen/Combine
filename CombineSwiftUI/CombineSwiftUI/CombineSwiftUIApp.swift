@@ -63,7 +63,9 @@ struct CombineSwiftUIApp: App {
             
 //            TimeOutView()
             
-            CompactMapView()
+//            CompactMapView()
+            
+            RemoveDuplicatesView()
         }
     }
 }
