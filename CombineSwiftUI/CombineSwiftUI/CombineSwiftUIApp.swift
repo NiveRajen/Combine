@@ -65,7 +65,9 @@ struct CombineSwiftUIApp: App {
             
 //            CompactMapView()
             
-            RemoveDuplicatesView()
+//            RemoveDuplicatesView()
+            
+            ReplaceEmptyView()
         }
     }
 }
