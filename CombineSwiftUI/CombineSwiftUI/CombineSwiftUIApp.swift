@@ -83,7 +83,9 @@ struct CombineSwiftUIApp: App {
             
 //            Collect_ByTimeView()
             
-            IgnoreOutputView()
+//            IgnoreOutputView()
+            
+            ReduceView()
         }
     }
 }
