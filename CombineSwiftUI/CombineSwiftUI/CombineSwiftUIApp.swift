@@ -67,7 +67,11 @@ struct CombineSwiftUIApp: App {
             
 //            RemoveDuplicatesView()
             
-            ReplaceEmptyView()
+//            ReplaceEmptyView()
+            
+//            MapView()
+            
+            ReplaceNilView()
         }
     }
 }
