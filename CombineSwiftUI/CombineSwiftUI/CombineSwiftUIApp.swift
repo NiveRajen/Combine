@@ -85,7 +85,13 @@ struct CombineSwiftUIApp: App {
             
 //            IgnoreOutputView()
             
-            ReduceView()
+//            ReduceView()
+            
+//            FirstView()
+            
+//            LastView()
+            
+            OutputView()
         }
     }
 }
