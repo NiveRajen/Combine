@@ -91,7 +91,9 @@ struct CombineSwiftUIApp: App {
             
 //            LastView()
             
-            OutputView()
+//            OutputView()
+            
+            SubscribeOnView()
         }
     }
 }
