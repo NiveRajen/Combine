@@ -93,7 +93,10 @@ struct CombineSwiftUIApp: App {
             
 //            OutputView()
             
-            SubscribeOnView()
+//            SubscribeOnView()
+            
+//            Assignto()
+            SinkView()
         }
     }
 }
