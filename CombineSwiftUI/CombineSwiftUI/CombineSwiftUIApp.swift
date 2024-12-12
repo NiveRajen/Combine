@@ -96,7 +96,12 @@ struct CombineSwiftUIApp: App {
 //            SubscribeOnView()
             
 //            Assignto()
-            SinkView()
+            
+//            SinkView()
+            
+//            FlatMapView()
+            
+            MergeView()
         }
     }
 }
