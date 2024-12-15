@@ -101,7 +101,9 @@ struct CombineSwiftUIApp: App {
             
 //            FlatMapView()
             
-            MergeView()
+//            MergeView()
+            
+            SwitchToLatest()
         }
     }
 }
