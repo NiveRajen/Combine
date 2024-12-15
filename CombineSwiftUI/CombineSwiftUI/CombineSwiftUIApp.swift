@@ -103,7 +103,9 @@ struct CombineSwiftUIApp: App {
             
 //            MergeView()
             
-            SwitchToLatest()
+//            SwitchToLatest()
+            
+            ZipView()
         }
     }
 }
