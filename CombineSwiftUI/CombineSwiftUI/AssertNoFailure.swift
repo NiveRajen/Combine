@@ -25,8 +25,8 @@ import SwiftUI
 //How can I tell if a pipeline is error-throwing or not? All operators that begin with “try“ throw errors, decode operator. So far, the only publisher I know that can throw an error is the dataTaskPublisher. Try adding an assign(to:) subscriber. If Xcode gives you an error, then usually something is throwing an error.
 //You use the assertNoFailure operator to ensure there will be no errors caused by anything upstream from it. If there is, your app will then crash. This is best to use when developing when you need to make sure that your data is always correct and your pipeline will always work.
 //Once your app is ready to ship though, you may want to consider removing it or it can crash your app if there is a failure.
-struct AssertNoFailure: View {
-    @StateObject private var vm = AssertNoFailure_IntroViewModel()
+struct AssertNoFailureView: View {
+    @StateObject private var vm = AssertNoFailureViewModel()
     var body: some View {
         VStack(spacing: 20) {
             HeaderView(title: "AssertNoFailure",
@@ -43,7 +43,7 @@ struct AssertNoFailure: View {
     }
 }
 
-class AssertNoFailure_IntroViewModel: ObservableObject {
+class AssertNoFailureViewModel: ObservableObject {
     @Published var dataToView: [String] = []
     func fetch() {
         let dataIn = ["Value 1", "Value 2", "%", "Value 3"]
@@ -66,5 +66,5 @@ class AssertNoFailure_IntroViewModel: ObservableObject {
 }
 
 #Preview {
-    AssertNoFailure()
+    AssertNoFailureView()
 }

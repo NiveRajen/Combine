@@ -105,7 +105,13 @@ struct CombineSwiftUIApp: App {
             
 //            SwitchToLatest()
             
-            ZipView()
+//            ZipView()
+            
+//            AssertNoFailureView()
+            
+            CatchView()
+            
+            
         }
     }
 }
