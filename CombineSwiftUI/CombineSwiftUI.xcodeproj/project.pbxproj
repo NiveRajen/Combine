@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5AF0E0C12D0EFC9600D1E75E /* Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0E0C02D0EFC9600D1E75E /* Catch.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5A90FAFD2CC2664C00D767A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		5A90FAEC2CC2664A00D767A2 /* CombineSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A90FAFC2CC2664C00D767A2 /* CombineSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A90FB062CC2664C00D767A2 /* CombineSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF0E0C02D0EFC9600D1E75E /* Catch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		5A90FAE32CC2664A00D767A2 = {
 			isa = PBXGroup;
 			children = (
+				5AF0E0C02D0EFC9600D1E75E /* Catch.swift */,
 				5A90FAEE2CC2664A00D767A2 /* CombineSwiftUI */,
 				5A90FAFF2CC2664C00D767A2 /* CombineSwiftUITests */,
 				5A90FB092CC2664C00D767A2 /* CombineSwiftUIUITests */,
@@ -257,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF0E0C12D0EFC9600D1E75E /* Catch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
